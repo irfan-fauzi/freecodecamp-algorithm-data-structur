@@ -26,21 +26,24 @@ var contacts = [
     }
 ];
 
+
 function lookUpProfile(name, prop) {
     // Only change code below this line
-    let result;
+    let hasil;
     for (let i = 0; i < contacts.length; i++) {
-        // cek, apakah akira adalah value dari object contact
-        if (contacts[i].firstName === name) {
-            result = contacts[i][prop];
+        if (name === contacts[i].firstName) {
+            hasil = contacts[i][prop];
         }
     }
-    return result;
+    if (hasil == undefined) {
+        return "nope";
+    }
+    return hasil
 
     // Only change code above this line
 }
 
-console.log(lookUpProfile("Sherlock", "likes"));
+console.log(lookUpProfile("Harry", "lastName"));
 
 /* "Kristian", "lastName" should return "Vos"
 "Sherlock", "likes" should return ["Intriguing Cases", "Violin"]
