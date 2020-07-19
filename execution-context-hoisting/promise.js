@@ -5,3 +5,15 @@ A promise in JavaScript is exactly what it sounds like - you use it to make a pr
 const makeServerRequest = new Promise((resolve, reject) => {
 
 });
+
+// contoh
+const makeServerRequest = new Promise((resolve, reject) => {
+    // responseFromServer represents a response from a server
+    let responseFromServer;
+
+    if (responseFromServer) {
+        resolve("We got the data")// jika janji terpenuhi
+    } else {
+        reject("Data not received") // jika janji tidak terpenuhi
+    }
+});
