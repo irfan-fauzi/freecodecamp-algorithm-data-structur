@@ -26,3 +26,12 @@ import * as stringFunctions from './string_functions.js';
 stringFunctions.uppercaseString("hello");
 stringFunctions.lowercaseString("WORLD!");
 
+// export default
+
+// Ada sintaks ekspor lain yang perlu Anda ketahui, dikenal sebagai default ekspor. Biasanya Anda akan menggunakan sintaks ini jika hanya satu nilai yang diekspor dari file. Ini juga digunakan untuk membuat nilai mundur untuk file atau modul.
+
+export default function subtract(x, y) {
+    return x - y;
+}
+
+
