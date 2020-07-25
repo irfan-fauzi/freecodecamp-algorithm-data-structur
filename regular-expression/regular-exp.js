@@ -51,3 +51,54 @@ let myRegex = /[a-z0-9]/ig;
 jennyStr.match(myRegex);
 
 
+/*  
+    beberapa contoh kasus yang sudah kita buat adalah untuk mencocokan dengan karakter yang kita ingin cari, 
+    dalam regular expression bisa huga kita memisahkan karakter yang tidak kita inginkan :
+    
+    To create a negated character set, you place a caret character (^) 
+    after the opening bracket and before the characters you do not want to match.
+
+    For example, /[^aeiou]/gi matches all characters that are not a vowel. 
+    Note that characters like ., !, [, @, / and white space are matched - the negated 
+    vowel character set only excludes the vowel characters.
+*/
+
+let quoteSample = "3 blind mice.";
+let myRegex = /[^aiueo0-9]/gi; // mengecualikan karakter [aiueo dan 0-9]
+let result = quoteSample.match(myRegex); // 
+
+/*
+
+Sometimes, you need to match a character (or group of characters) that appears one or more times in a row. This means it occurs at least once, and may be repeated.
+
+You can use the + character to check if that is the case. Remember, the character or pattern has to be present consecutively. That is, the character has to repeat one after the other.
+
+For example, /a+/g would find one match in "abc" and return ["a"]. Because of the +, it would also find a single match in "aabc" and return ["aa"].
+
+If it were instead checking the string "abab", it would find two matches and return ["a", "a"] because the a characters are not in a row - there is a b between them. Finally, since there is no "a" in the string "bcd", it wouldn't find a match
+
+*/
+
+let difficultSpelling = "Mississippi";
+let myRegex = /s+/gi; // Change this line
+let result = difficultSpelling.match(myRegex);
+
+/*
+The last challenge used the plus + sign to look for characters that occur one or more times. There's also an option that matches characters that occur zero or more times.
+
+*/
+let soccerWord = "gooooooooal!";
+let gPhrase = "gut feeling";
+let oPhrase = "over the moon";
+let goRegex = /go*/;
+soccerWord.match(goRegex); // Returns ["goooooooo"]
+gPhrase.match(goRegex); // Returns ["g"]
+oPhrase.match(goRegex); // Returns null
+
+// 
+// Only change code below this line
+let chewieRegex = /Aa*/; // Change this line
+// Only change code above this line
+let result = chewieQuote.match(chewieRegex);
+
+
