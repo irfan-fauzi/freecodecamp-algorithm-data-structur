@@ -1,3 +1,62 @@
+/*
+
+Pemrograman fungsional adalah kebiasaan yang baik. Itu membuat kode Anda mudah dikelola, dan menyelamatkan Anda dari bug licik. Tetapi sebelum kita sampai di sana, mari kita lihat pendekatan penting untuk pemrograman untuk menyoroti di mana Anda mungkin memiliki masalah.
+
+Dalam bahasa Inggris (dan banyak bahasa lainnya), bentuk imperatif digunakan untuk memberi perintah. Demikian pula, gaya imperatif dalam pemrograman adalah gaya yang memberi komputer serangkaian pernyataan untuk melakukan suatu tugas.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Function that returns a string representing a cup of green tea
 const prepareTea = () => 'greenTea';
 
