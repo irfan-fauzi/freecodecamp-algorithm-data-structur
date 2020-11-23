@@ -1,60 +1,52 @@
-html {
+html{
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-}
 
-body {
-  background: url("https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+}
+body{
+  background: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
   background-position: center;
-  color: #c8c9ce;
-}
+  color: rgb(200, 201, 206);
 
-body::after {
+}
+body::after{
   content: "";
   width: 100%;
   height: 790px;
   position: absolute;
-  background-color: #17177b;
+  background-color: rgb(23, 23, 123);
   opacity: 80%;
   top: 0;
   bottom: 0;
   left: 0;
   z-index: -1;
 }
-
-.header {
+.header{
+  // background-color: rgb(109, 173, 233);
   text-align: center;
   margin-bottom: 40px;
+  h1{
+   font-weight: 200;
+  }
 }
-
-.header h1 {
-  font-weight: 200;
-}
-
-#survey-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
+#survey-form{
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin: auto;
+  // border: white solid 2px;
   width: 500px;
   padding: 20px;
   position: relative;
+  .form-group{
+    position: relative;
+    z-index: 3;
+  }
 }
-
-#survey-form .form-group {
-  position: relative;
-  z-index: 3;
-}
-
-#survey-form::after {
+#survey-form::after{
   content: "";
   width: 100%;
   height: 100%;
@@ -65,5 +57,5 @@ body::after {
   opacity: 70%;
   z-index: 1;
   border-radius: 10px;
+
 }
-/*# sourceMappingURL=style.css.map */
